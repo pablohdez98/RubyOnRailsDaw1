@@ -1,0 +1,11 @@
+<h1>Login</h1>
+<%= form_for :user, url: admin_checkLogin_path do |f|%>
+  <%= f.label :email, 'Correo electrónico:' %>
+  <%= f.text_field :email %> <br>
+  <%= f.label :password, 'Contraseña:' %>
+  <%= f.password_field :password %> <br>
+
+  <%= f.submit %> <br>
+<% end %>
+
+<%= link_to "logOut", admin_logOut_path %>
